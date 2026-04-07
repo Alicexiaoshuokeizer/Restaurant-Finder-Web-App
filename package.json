@@ -1,0 +1,14 @@
+{
+  "name": "restaurants",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "restaurants.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node restaurant.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
