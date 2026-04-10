@@ -1,0 +1,80 @@
+/* stylesheet for index.html */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+header, main {
+    margin: auto 4%;
+}
+
+h1 {
+    color: #FF4500;
+    width: 100%;
+}
+
+input {
+    border: 3px solid #555;
+    height: 2em;
+    width: 20em;
+    font-size: 1em;
+}
+
+h2 {
+    color: #454140;
+}
+
+h3 {
+    color: #454140;
+}
+
+h4 {
+    color: #4747D4;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 0.1em auto;
+}
+
+span {
+    font-weight: 800;
+    color: #454140;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+p {
+    color:#555;
+}
+
+
+footer {
+    margin:2em auto ;
+}
+
+/* flex box effect */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5em;
+    justify-content: flex-start;
+}
+
+.item {
+    flex: 1 1 38%;
+    overflow-wrap: break-word;
+    width: 30%;
+    border: 1px solid transparent;
+    border-radius: 8%;
+    background-color: bisque;
+}
+
+.item:hover  {
+    background-color: #FED197;
+}
+
+.item * {
+    /* need to fix a bug on pading/margin of p element  */
+    padding-left: 5px;
+}

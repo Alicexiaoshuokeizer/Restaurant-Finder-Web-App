@@ -24,7 +24,7 @@ async function search() {
     if (Array.isArray(results)) {
        for (let r of results) {
         const container = document.createElement('div')
-        container.class = 'item';
+        container.className = 'item';
 
         const name = document.createElement('h4');
         name.textContent = r.name;
