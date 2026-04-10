@@ -30,13 +30,13 @@ async function search() {
         name.textContent = r.name;
 
         const rating = document.createElement('p');
-        rating.innerHTML = `<span>star rating</span>: ${r.rating}`;
+        rating.innerHTML = `<span>Star rating</span>: ${r.rating}`;
 
         const cuisines = document.createElement('p');
-        cuisines.innerHTML = `<span>cuisines</span>: ${r.cuisines.join()}`;
+        cuisines.innerHTML = `<span>Cuisines</span>: ${r.cuisines.join()}`;
 
         const address = document.createElement('p');
-        address.innerHTML = `<span>address</span>: ${r.address}`
+        address.innerHTML = `<span>Address</span>: ${r.address}`
         container.append(name, 
                         rating, 
                         cuisines, 
