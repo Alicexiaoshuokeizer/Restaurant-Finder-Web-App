@@ -46,12 +46,15 @@ async function search() {
     }
 }
 
+
+// handler function
 function handler(event) {
     // form method prevent submit jump to a new page
     event.preventDefault();
     search();
 }  
 
+// add eventlistener to text input box when user press 'Enter' 
 const form = document.getElementById('search-form');
 form.addEventListener('submit', handler);
 
