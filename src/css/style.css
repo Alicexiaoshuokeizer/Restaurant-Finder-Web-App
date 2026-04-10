@@ -29,7 +29,7 @@ h3 {
 }
 
 h4 {
-    color: #4747D4;
+    color: #CC0000;
     margin-bottom: 0.5em;
 }
 
@@ -50,10 +50,11 @@ p {
 
 
 footer {
-    margin:2em auto ;
+    margin:4em auto;
 }
 
-/* flex box effect */
+
+/* comment out the following part to remove flex box effect */
 #results {
     display: flex;
     flex-wrap: wrap;
@@ -66,8 +67,9 @@ footer {
     overflow-wrap: break-word;
     width: 30%;
     border: 1px solid transparent;
-    border-radius: 8%;
-    background-color: bisque;
+    border-radius: 2%;
+    background-color: #FFF6E5;
+    padding-bottom: 0.5em;
 }
 
 .item:hover  {
