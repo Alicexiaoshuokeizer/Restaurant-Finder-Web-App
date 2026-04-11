@@ -1,4 +1,4 @@
-async function getRestsAPI(postcode) { //Q: test invalid postcode
+async function fetchAllRestaurants(postcode) { //Q: test invalid postcode
     //1.send request to API with provided postcode
     const response = await fetch(`https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`);
     const data = await response.json();
@@ -8,11 +8,9 @@ async function getRestsAPI(postcode) { //Q: test invalid postcode
         console.log('invalid postcode, api function return false')
         return false;
     }
-    //3.get an array of all restaurant objects near area of provided postcode
-    const restObjArr = data.restaurants; 
 
-    //4.return array
-    return restObjArr;
+    //4.return array an array of all restaurant objects near area of provided postcode
+    return data.restaurants;
 }
 
 // Create a Class to store restauratn info: Name Cuisines Rating(number) Address
@@ -25,13 +23,13 @@ class Restaurant {
     }
 }
 
-// function to extract first 10 restaurants' info
-function getTenRests(restObjArr) {
+// Given full restaurant data, return first 10 restaurants as objests(class Restaurant)
+function getTenRests(restaurants) {
     //1.create an arr to store first 10 class Restaurant instances
     const tenRests = []
 
     // 2.extract cuisines, starRating, address and name of each restarant object, store info in class Restaurant instance
-    for (let rest of restObjArr) {
+    for (let rest of restaurants) {
         //map through cuisines value(an arr of objects) to get all cuisine names
         const dishes = []; 
         for (let dish of rest.cuisines) {
@@ -63,10 +61,10 @@ function getTenRests(restObjArr) {
     return tenRests;
 }
 
-// Wrapper 
-export async function apiWrapper(postcode) {
+// Get the first 10 restaurants returned by the API
+export async function getRestaurants(postcode) {
     //1. get data from api
-    const restObjArr = await getRestsAPI(postcode);
+    const restObjArr = await fetchAllRestaurants(postcode);
 
     //2.check data fromat correctness and return first 10 restaurants
     if (Array.isArray(restObjArr)) {

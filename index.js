@@ -1,4 +1,4 @@
-import { apiWrapper } from "./simpleAPI.js";
+import { getRestaurants } from "./simpleAPI.js";
 
 async function search() {
     //1. get text input when key enter pressdown
@@ -6,7 +6,7 @@ async function search() {
     const postcode = input.value 
 
     //2. call api and wrapper to get arr: first 10 restaurants or str: invalid postcode
-    const results = await apiWrapper(postcode);
+    const results = await getRestaurants(postcode);
 
     //3. show search results in div id = results
     //3.1 clear old results
