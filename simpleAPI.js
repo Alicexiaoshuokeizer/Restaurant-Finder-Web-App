@@ -1,4 +1,4 @@
-async function fetchAllRestaurants(postcode) { //Q: test invalid postcode
+export async function fetchAllRestaurants(postcode) {
     //1.send request to API with provided postcode
     const response = await fetch(`https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`);
     const data = await response.json();
@@ -9,7 +9,7 @@ async function fetchAllRestaurants(postcode) { //Q: test invalid postcode
         return false;
     }
 
-    //4.return array an array of all restaurant objects near area of provided postcode
+    //3.return array an array of all restaurant objects near area of provided postcode
     return data.restaurants;
 }
 
@@ -24,7 +24,7 @@ class Restaurant {
 }
 
 // Given full restaurant data, return first 10 restaurants as objests(class Restaurant)
-function getTenRests(restaurants) {
+export function getTenRests(restaurants) {
     //1.create an arr to store first 10 class Restaurant instances
     const tenRests = []
 
