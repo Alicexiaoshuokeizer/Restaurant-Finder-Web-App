@@ -65,7 +65,7 @@ Another approach is to set up a proxy on the same domain as the static website i
 
 **Adding Features**
 
-There are more properties in the restaurant objects, which enable filter implementation. Users can use filters to view restaurants that support free delivery, restaurants that have minimum order value for delivery and restaurants that are highly rated. I suggest introducing a sorting mechanism for restaurant rating and delivery time. I started working on these features--feel free to review them in this [draft pull request]().
+There are more properties in the restaurant objects, which enable filter implementation. Users can use filters to view restaurants that support free delivery, restaurants that have minimum order value for delivery and restaurants that are highly rated. I suggest introducing a sorting mechanism for restaurant rating and delivery time. I started working on these features--feel free to review them in this [draft pull request](https://github.com/Alicexiaoshuokeizer/Restaurant-Finder-Web-App/pull/1).
 
 <!-- Pagination for results and order: -->
 
