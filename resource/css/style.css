@@ -20,7 +20,7 @@ input {
     font-size: 1em;
 }
 
-button {
+#searchButton {
     margin-left: 0.1em;
     height: 2.4em;
     width: 5em;
@@ -31,9 +31,14 @@ button {
     font-weight: 600;
 }
 
-button:hover {
+#searchButton:hover {
     border: 3px solid #FF7518;
     background-color: #FF7518;
+}
+
+#filters {
+    margin-top: 1em;
+    
 }
 
 h2 {
