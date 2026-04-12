@@ -23,3 +23,15 @@ describe('test with mock restaurant data from valid postcode',
         )
     }
 )
+
+describe('test with invalide postcode restaurant data',
+    () => {
+        it('should return str: invalid postcode',
+            () => {
+                const output = getTenRests(null);
+                expect(output).toEqual('invalid postcode');
+            }
+        )
+    }
+)
+

@@ -6,7 +6,7 @@ async function fetchAllRestaurants(postcode) { //Q: test invalid postcode
     //2.check location, if value is undefined: postcode is invalid
     if (!data.metaData.location) {
         console.log('invalid postcode, api function return false')
-        return false;
+        return null;
     }
 
     //4.return array an array of all restaurant objects near area of provided postcode
@@ -23,7 +23,7 @@ class Restaurant {
     }
 }
 
-// Given full restaurant data, return first 10 restaurants as objests(class Restaurant). Given false(from fetchAllRestaurants), return 'invalid postcode';
+// Given full restaurant data, return first 10 restaurants as objests(class Restaurant). Given null (from fetchAllRestaurants), return 'invalid postcode';
 export function getTenRests(restaurants) {
     //if user input invalid postcode, restaurant = false, this function return 'invalid postcode'
     if(Array.isArray(restaurants) === false) {
