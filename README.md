@@ -18,6 +18,8 @@
 ## Setup Instructions
 This project is implemented as a pure front-end application and communicates with the external REST API via a local proxy. 
 
+0. Check and make sure your Node.js version is at least 20.19+ or 22.12+
+
 1. Clone the repository
    ```
    $ git clone https://github.com/Alicexiaoshuokeizer/Restaurant-Finder-Web-App.git
