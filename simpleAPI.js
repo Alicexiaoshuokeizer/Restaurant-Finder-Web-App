@@ -1,6 +1,7 @@
 async function fetchAllRestaurants(postcode) { //Q: test invalid postcode
     //1.send request to API with provided postcode
-    const response = await fetch(`https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`);
+    //see vite.config.js for proxy configuration
+    const response = await fetch(`/api/discovery/uk/restaurants/enriched/bypostcode/${postcode}`);
     const data = await response.json();
 
     //2.check location, if value is undefined: postcode is invalid
