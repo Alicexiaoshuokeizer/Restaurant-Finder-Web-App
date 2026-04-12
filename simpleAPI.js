@@ -23,8 +23,13 @@ class Restaurant {
     }
 }
 
-// Given full restaurant data, return first 10 restaurants as objests(class Restaurant)
+// Given full restaurant data, return first 10 restaurants as objests(class Restaurant). Given false(from fetchAllRestaurants), return 'invalid postcode';
 export function getTenRests(restaurants) {
+    //if user input invalid postcode, restaurant = false, this function return 'invalid postcode'
+    if(Array.isArray(restaurants) === false) {
+        return 'invalid postcode';
+    }
+
     //1.create an arr to store first 10 class Restaurant instances
     const tenRests = []
 
@@ -64,17 +69,12 @@ export function getTenRests(restaurants) {
 // Get the first 10 restaurants returned by the API
 export async function getRestaurants(postcode) {
     //1. get data from api
-    const restObjArr = await fetchAllRestaurants(postcode);
+    const restaurants = await fetchAllRestaurants(postcode);
 
-    //2.check data fromat correctness and return first 10 restaurants
-    if (Array.isArray(restObjArr)) {
-        const tenRests = getTenRests(restObjArr);
-        return tenRests;
-    }
-
-    //3.if postcode invalid return value
-    return 'invalid postcode';
+    //2.return first 10 restaurants || return 'invalid postcode'
+    return getTenRests(restaurants);
 }
+
 
 
 
