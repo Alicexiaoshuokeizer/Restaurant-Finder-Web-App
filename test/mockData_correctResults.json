@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Curry Queen",
+    "cuisines": [
+      "Indian",
+      "Curry",
+      "Halal",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "1 Shenfield Street London N1 6SE"
+  },
+  {
+    "name": "Mr Chan's",
+    "cuisines": [
+      "Chinese",
+      "Asian",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "21 Clerkenwell Road London EC1M 5RD"
+  },
+  {
+    "name": "Chicken Valley Holborn",
+    "cuisines": [
+      "Chicken",
+      "Burgers",
+      "Halal",
+      "Collect stamps",
+      "Deals",
+      "Freebies"
+    ],
+    "rating": 5,
+    "address": "60 Theobalds Road London WC1X 8SF"
+  },
+  {
+    "name": "Pizza Express Pizza & Pasta - London - St Pauls",
+    "cuisines": [
+      "Pizza",
+      "Italian",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "Condor House, 5-10 St Paul's Churchyard, London London EC4M 8AY"
+  },
+  {
+    "name": "Magic Wok",
+    "cuisines": [
+      "Chinese",
+      "Dim Sum",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "107 Lever Street London EC1V 3RQ"
+  },
+  {
+    "name": "Busaba Thai - Covent Garden",
+    "cuisines": [
+      "Thai",
+      "Asian",
+      "Collect stamps",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "44 Floral Street, Covent Garden, London WC2E 9DA"
+  },
+  {
+    "name": "Hoxton Chicken N Pizza",
+    "cuisines": [
+      "Pizza",
+      "Burgers",
+      "Halal",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "94 Hoxton Street London N1 6LP"
+  },
+  {
+    "name": "Shake Shack Mansion House",
+    "cuisines": [
+      "Burgers",
+      "American"
+    ],
+    "rating": 5,
+    "address": "Unit 1, 45 Cannon Street London EC4M 5SH"
+  },
+  {
+    "name": "Zam Zam Grill",
+    "cuisines": [
+      "Kebab",
+      "Chicken",
+      "Halal",
+      "Collect stamps",
+      "Deals"
+    ],
+    "rating": 5,
+    "address": "51 Hackney Road London E2 7NX"
+  },
+  {
+    "name": "Patty&Bun - Victoria",
+    "cuisines": [
+      "Burgers",
+      "American",
+      "Collect stamps"
+    ],
+    "rating": 5,
+    "address": "7a Back Kingsgate Parade London SW1E 6SQ"
+  }
+]

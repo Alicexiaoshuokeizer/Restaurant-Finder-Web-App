@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { getTenRests } from '../simpleAPI.js'
 import data from './mockData_restaurants.json'
+import correctResults from './mockData_correctResults.json'
 
 describe('test with mock restaurant data from valid postcode', 
     () => {
@@ -10,3 +11,15 @@ describe('test with mock restaurant data from valid postcode',
                 expect(result.length).toBe(10);
             })
     })
+
+
+describe('test with mock restaurant data from valid postcode',
+    () => {
+        it('should return exactly the same output as correctResults',
+            () => {
+                const output = getTenRests(data.restaurants);
+                expect(output).toEqual(correctResults);
+            }
+        )
+    }
+)
