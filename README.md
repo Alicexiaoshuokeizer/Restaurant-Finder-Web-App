@@ -53,7 +53,7 @@ There are more properties in the restaurant objects, which enable filter impleme
 
 **Configure Production Server**
 
-Currently in local development, the project uses [vite](https://vite.dev/) to serve the web application and communicate with the API. In a production environment, we should configure a production server such as Nginx or Apache.
+Currently, in local development, the project uses [vite](https://vite.dev/) to serve the web application and communicate with the API. In a production environment, we should configure a production server such as Nginx or Apache.
 
 ## Challenges
 **Solving CORS issues**
@@ -61,9 +61,3 @@ Currently in local development, the project uses [vite](https://vite.dev/) to se
 Initially the front-end talked directly with the API, but there are CORS issues due to CORS restrictions in browsers security policies. CORS Unblock extensions were used to bypass CORS restrictions, which make the setup of the development troublesome. 
 
 There are two approaches to solve the problem. One approach is to deploy the application under the same domain as the API it communicates with. This is simple, but it requires control over the API and domain. Since I don't have the control of the domain, I set up a proxy to communicate with the API with vite.
-
-
-
-
-
-
