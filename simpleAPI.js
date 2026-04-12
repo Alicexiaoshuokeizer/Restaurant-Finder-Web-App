@@ -24,7 +24,7 @@ class Restaurant {
 }
 
 // Given full restaurant data, return first 10 restaurants as objests(class Restaurant)
-function getTenRests(restaurants) {
+export function getTenRests(restaurants) {
     //1.create an arr to store first 10 class Restaurant instances
     const tenRests = []
 
